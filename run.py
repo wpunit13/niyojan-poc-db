@@ -1,11 +1,11 @@
-from flaskblog import app
+from flaskblog import create_app
 # from models import User, Post
 
 # Database structure put it in models later
 
 
-
+app = create_app()
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.1.8', debug=True)
+    app.run(debug=True)
